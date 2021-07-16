@@ -32,8 +32,11 @@ let money = +prompt("Ваш бюджет на месяц?", ""),
         console.log("Это минимальный уровень достака!");
     }else if (appData.moneyPerDay > 100 && appData.moneyPerDay < 2000) {
         console.log("Это средный уровень достака!");
-    }else {
-        console.log("Произошло ошибка");
+    }else if (appData.moneyPerDay > 2000) {
+        console.log("Это высокий уровень достака!");
     }
+    else {
+        console.log("Произошло ошибка");
+    };
 
 
