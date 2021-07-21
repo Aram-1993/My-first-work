@@ -28,6 +28,7 @@ function start() {
         console.log("done");
         appData.expenses[a] = b;
     }else {
+
         console.log("bad result");
         i--;
       }
